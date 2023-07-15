@@ -72,12 +72,15 @@ const Home = () => {
                         Check your valuable currency conversion
                     </p>
                 </div>
+                <div class="text-center card w-25 rounded-4 DualSafe-animated-fill" style={{ backgroundColor: "#ccccff" }}>
+                    <h5 className='mt-2'> {date} <span>{time}</span></h5>
+                </div>
 
                 <div className="jumbotron bg-transparent mt-5">
                     <div className='row'>
-                        <div className='col-md-6 mt-5 pt-5 ' >
+                        <div className='col-md-6 mt-3 pt-3 ' >
                             {result && (
-                                <div className='card w-75 text-center h-auto ' style={{ background: "#0dcaf0" }}>
+                                <div className='card w-75 text-center h-auto shadow-lg p-3 rounded-5 ' style={{ background: "#0dcaf0" }}>
                                     <h2>Result:</h2>
                                     <h4>{amount} {baseCurrency} = {result} {targetCurrency}</h4>
                                 </div>
@@ -85,7 +88,7 @@ const Home = () => {
                         </div>
 
                         <div class="col-md-6">
-                            <div class="card bg-primary-subtle " style={{ borderRadius: "20px", marginLeft: "10px", marginTop: "20px" }} >
+                            <div class="card bg-primary-subtle shadow p-3 rounded-5 " style={{ borderRadius: "20px", marginLeft: "10px", marginTop: "10px" }} >
                                 <div >
                                     <div class="form-group mt-5" style={{ marginLeft: "20px", marginRight: "20px" }} >
 
@@ -115,9 +118,7 @@ const Home = () => {
 
                     </div>
                 </div>
-                <div class="text-center">
-                    <h5> {date} <span>{time}</span></h5>
-                </div>
+                
                 <div className='row mt-5'>
                     <div className='col-md-2 mt-5'></div>
                     <div className='col-md-10 text-center w-75'>
